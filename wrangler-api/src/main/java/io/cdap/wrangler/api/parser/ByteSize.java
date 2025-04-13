@@ -14,14 +14,16 @@
  * the License.
  */
 
-
  package io.cdap.wrangler.api.parser;
 
  import com.google.gson.JsonElement;
  import com.google.gson.JsonPrimitive;
  
  import java.util.Locale;
- 
+ /**
+ * Token representing a parsed byte size value (e.g., 10KB, 1.5MB).
+ */
+
  public class ByteSize implements Token {
      private final String original;
      private final long bytes;

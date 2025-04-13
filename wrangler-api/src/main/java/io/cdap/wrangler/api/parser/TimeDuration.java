@@ -19,7 +19,10 @@
  import com.google.gson.JsonPrimitive;
  
  import java.util.Locale;
- 
+ /**
+ * Token representing a parsed time duration (e.g., 200ms, 1s).
+ */
+
  public class TimeDuration implements Token {
      private final String original;
      private final long nanoseconds;
@@ -75,5 +78,3 @@
          return new JsonPrimitive(original);
      }
  }
- 
- 
